@@ -1,0 +1,148 @@
+.header1 {
+
+width: 100%;
+background-color: white;
+text-align: center;
+}
+
+ul{
+  overflow:hidden;
+  list-style:none;
+  background:linear-gradient(to right ,green,#55eb34);
+  z-index: 2222;
+
+
+}
+ul li{
+  float:left;
+  padding: 15px 30px;
+}
+ul li:hover:after{
+  content:"";
+  position: absolute;
+  margin-top:4px;
+  margin-left:7px;
+
+}
+ul li:hover{
+  background-color: #222;
+  cursor: pointer
+}
+ul li a{
+  text-decoration:none;
+  color:#fff
+}
+
+
+.card{
+	width: 30%;
+	float: left;
+	margin-left: 20px;
+}
+
+h2{
+ color: green;	
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 102px;
+}
+
+.main3{
+  width: 100%;
+  height: 600px;
+}
+
+.carder{
+box-shadow: 2px 4px 20px black;
+width: 250px;
+height:  100%;
+margin-left: 75px;
+float: left;
+padding-bottom: 20px;
+}
+.carder img{
+margin: 20px;
+width: 200px;
+height: 150px;
+
+}
+.carder p,h1{
+text-align: center;
+padding-bottom: 20px;
+}
+.carder:hover{
+background-color: pink;
+
+}
+.anim{
+ animation: chanto  10s infinite;
+   transition: 5s;
+}
+@keyframes chanto{
+  from{
+    margin-right: 190px;
+   
+
+  }
+  to{
+    margin-left: 190px;
+    color: grey;
+    box-shadow: black;
+
+  
+  }
+}
+
+
+.foot {
+
+	height: 300px;
+	background: linear-gradient(violet,black);
+	width: 100%;
+}
+.grid{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	background-image: url(back.jpg); 
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.content{
+	text-align: center;
+	padding: 40px;
+}
+ h3 {
+	color: cyan;
+}
+.col{
+	margin: 40px;
+	color: white;
+}
+hr.new{
+	border: 1px solid white;
+}
+.midle{
+ background-color: violet;
+ position: absolute;
+ text-align: center;
+ margin-left: 40px;
+}
+.act{
+   background-color: #222;
+  cursor: pointer;
+  padding:20px;
+}

@@ -1,0 +1,100 @@
+.header1 {
+
+width: 100%;
+background-color: white;
+text-align: center;
+}
+
+ul{
+  overflow:hidden;
+  list-style:none;
+  background:linear-gradient(to right ,green,#55eb34);
+  z-index: 2222;
+
+
+}
+ul li{
+  float:left;
+  padding: 15px 30px;
+}
+ul li:hover:after{
+  content:"";
+  position: absolute;
+  margin-top:4px;
+  margin-left:7px;
+
+}
+ul li:hover{
+  background-color: #222;
+  cursor: pointer
+}
+ul li a{
+  text-decoration:none;
+  color:#fff
+}
+
+
+h2{
+ color: green;	
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 102px;
+}
+
+
+.foot {
+
+	height: 300px;
+	background: linear-gradient(violet,black);
+	width: 100%;
+}
+
+.col{
+	margin: 40px;
+	color: white;
+}
+hr.new{
+	border: 1px solid white;
+}
+.main{
+  text-align: center;
+  background-image: url(gihemb.jpg);
+  background-size: cover;
+  height: 80vh;
+  width: 100%;
+  margin-top: -5%;
+}
+.main h1{
+
+  color: white;
+  padding: 15%;
+  font-size: 60px;
+}
+p{
+  color: black;
+}
+h5{
+  color: green;
+}
+.act{
+   background-color: #222;
+  cursor: pointer;
+  padding:20px;
+}
+img{
+  object-fit: cover;
+}
